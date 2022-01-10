@@ -1,0 +1,48 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 0, 0, 0.7);
+    color:yellow;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    z-index:100;
+    top:0;
+    left:0;
+    right:0;
+    height: 80px;
+    margin-bottom: 0;
+    margin: 0 10px;
+    border-radius: 5px;
+  }
+  nav h1:hover{
+    color:orangered;
+    background-color: yellow;
+  }
+  nav span i:hover{
+    color:orangered;
+    background-color: yellow;
+    border-radius: 5px;
+    cursor: pointer;
+   
+  }
+ 
+
+.cart-btn{
+  position: relative;
+}
+  .number{
+position: absolute;
+top:3px;
+right: 7px;
+color:red;
+font-size: 25px;
+background-color:white ;
+border-radius: 5px;
+  }
+
+  nav h1{
+  font-size: 30px;
+  }
+
+ 

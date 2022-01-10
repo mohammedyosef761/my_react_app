@@ -1,0 +1,50 @@
+.img{
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    height: 1000px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.container{
+    margin-top: 80px;
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: 100px;
+    text-align: center;
+    background: yellow;
+    border-radius: 5px;
+    margin: 0 auto;
+   padding:20px;
+   text-transform: capitalize;
+}
+.text span{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    
+}
+
+.text:hover{
+    background-color: red;
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    .text {
+      position: absolute;
+      margin-left: 0;
+      width: 100px;
+      height: 40px;
+    }
+    .text span {
+        font-size: 30px;
+    }
+  }
