@@ -15,13 +15,14 @@
     left:50%;
     transform: translate(-50%,-50%);
     width: 40%;
-    height: 100px;
+    height: 60px;
     text-align: center;
     background: yellow;
     border-radius: 5px;
     margin: 0 auto;
    padding:20px;
    text-transform: capitalize;
+   overflow: hidden;
 }
 .text span{
     position: absolute;
@@ -29,11 +30,63 @@
     left:50%;
     transform: translate(-50%,-50%);
     font-size: 50px;
+    color:red;
     
 }
 
+
+.animated-text .text:nth-child(1){
+    animation: text-move 5s infinite;
+  }
+  @keyframes text-move {
+    0%{
+      margin-top: 0;
+    }
+    25%{
+      margin-top: -50px;
+    }
+  
+    50%{
+      margin-top: -100px;
+    }
+    75%{
+      margin-top: -50px;
+    }
+    100%{
+      margin-top: 0;
+    }
+  }
+
+  .animated-text .text:nth-child(2){
+    animation: text-move1 5s infinite;
+  }
+  @keyframes text-move1 {
+    0%{
+      margin-top: 0;
+    }
+    25%{
+      margin-top: 50px;
+    }
+  
+    50%{
+      margin-top: 100px;
+    }
+    75%{
+      margin-top: 50px;
+    }
+    100%{
+      margin-top: 0;
+    }
+  }
+
+.text:hover span{
+    background-color: red;
+    color:yellow;
+    
+}
 .text:hover{
     background-color: red;
+    color:yellow;
     
 }
 
